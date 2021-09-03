@@ -17,10 +17,13 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/b7c66f5c82.js" crossorigin="anonymous"></script>
 
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!-- TITLE -->
     <title>E-mail/username/domain slicer</title>
 </head>
-<body>
+<body class="bg-dark text-white text-center h-75">
 
     <!-- HERO -->
     <div id="hero">
@@ -29,32 +32,34 @@
     </div>
 
     <!-- INPUT CONTAINER -->
-    <div id="input-cont">
-        <form>
+    <div  class="d-flex flex-row justify-content-around mx-auto w-75" id="input-cont">
+        <span>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" id="fname" name="fname" placeholder="John">
+        </span>
 
+        <span>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="text" id="lname" name="lname" placeholder="Doe">
+        </span>
 
-            <input type="submit" value="Submit">
-          </form> 
+        <a href="#" id="submit">Submit</a>
     </div>
 
     <!-- RESULT CONTAINER -->
     <div id="result-cont">
-        <ul>
+        <ul class="d-flex flex-row justify-content-around mx-auto w-75 list-unstyled">
             <li>
-                <h1>E-mail</h1>
-                <p id="email">jovan@mail.com</p>
+                <p>E-mail</p>
+                <h4 id="email">jovan@mail.com</h4>
             </li>
             <li>
-                <h1>Username</h1>
-                <p id="username">@miljkovicjoava</p>
+                <p>Username</p>
+                <h4 id="username">@miljkovicjoava</h4>
             </li>
             <li>
-                <h1>Domain</h1>
-                <p id="domain">www.miljkovicjovan.com</p>
+                <p>Domain</p>
+                <h4 id="domain">www.miljkovicjovan.com</h4>
             </li>
         </ul>
     </div>
@@ -62,9 +67,10 @@
     <!-- FOOTER -->
     <div id="footer">
         <p>Website created by <a target="_blank" href="https://j13.netlify.app">@miljkovicjovan</a></p>
-        <ul>
-            <li><a target="_blank" href="https://github.com/miljkovicjovan"><i class="fab fa-github-square"></i></a></li>
-            <li><a target="_blank" href="mailto:jovan.miljkovic.biz@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        <ul class="d-flex flex-row justify-content-around list-unstyled">
+            <li><a target="_blank" href="https://github.com/miljkovicjovan"><i id="github" class="fab fa-github-square"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jovan-miljkovic-b42a12204/"><i id="linkedin" class="fab fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="mailto:jovan.miljkovic.biz@gmail.com"><i id="mail" class="fas fa-envelope"></i></a></li>
         </ul>
     </div>
 </body>

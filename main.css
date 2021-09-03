@@ -1,0 +1,68 @@
+/********** HTML AND BODY *********/
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/********** HERO CONTAINER *********/
+#hero {
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+/********** INPUT CONTAINER *********/
+#input-cont {
+    align-items: flex-end;
+}
+#submit {
+    font-size: 1.3rem;
+    color: white;
+    transition: 0.3s all;
+    text-decoration: none;
+}
+#submit:hover {
+    color: rgb(0, 110, 255);
+}
+
+/********** RESULT CONTAINER *********/
+#result-cont {
+    display: none;
+}
+
+/********** FOOTER *********/
+#footer {
+    margin-top: 15%;
+}
+#footer ul {
+    margin-top: 4%;
+}
+#footer ul li {
+    font-size: 1.5rem;
+}
+
+#github {
+    color: #6e5494;
+    transition: 0.3s all;
+}
+#github:hover {
+    color: #7e6e95;
+}
+
+#linkedin {
+    color: #0077b5;
+    transition: 0.3s all;
+}
+#linkedin:hover {
+    color: #5490b1;
+}
+
+#mail {
+    color: #BB001B;
+    transition: 0.3s all;
+}
+#mail:hover {
+    color: #b64758;
+}
