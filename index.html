@@ -14,10 +14,58 @@
     <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
     <link rel="manifest" href="resources/favicon/site.webmanifest">
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/b7c66f5c82.js" crossorigin="anonymous"></script>
+
     <!-- TITLE -->
     <title>E-mail/username/domain slicer</title>
 </head>
 <body>
-    
+
+    <!-- HERO -->
+    <div id="hero">
+        <h1>Enter your fullname</h1>
+        <p>And we will generate an email adress / username / domain name</p>
+    </div>
+
+    <!-- INPUT CONTAINER -->
+    <div id="input-cont">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <input type="submit" value="Submit">
+          </form> 
+    </div>
+
+    <!-- RESULT CONTAINER -->
+    <div id="result-cont">
+        <ul>
+            <li>
+                <h1>E-mail</h1>
+                <p id="email">jovan@mail.com</p>
+            </li>
+            <li>
+                <h1>Username</h1>
+                <p id="username">@miljkovicjoava</p>
+            </li>
+            <li>
+                <h1>Domain</h1>
+                <p id="domain">www.miljkovicjovan.com</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <p>Website created by <a target="_blank" href="https://j13.netlify.app">@miljkovicjovan</a></p>
+        <ul>
+            <li><a target="_blank" href="https://github.com/miljkovicjovan"><i class="fab fa-github-square"></i></a></li>
+            <li><a target="_blank" href="mailto:jovan.miljkovic.biz@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </div>
 </body>
 </html>
