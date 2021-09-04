@@ -15,7 +15,7 @@ body {
 
 /********** INPUT CONTAINER *********/
 #input-cont {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     align-items: flex-end;
 }
 #submit {
@@ -33,14 +33,9 @@ body {
     color: #343A3F;
 }
 
-/********** RESULT CONTAINER *********/
-#result-cont {
-    display: none;
-}
-
 /********** FOOTER *********/
 #footer {
-    margin-top: 15%;
+    margin-top: 10%;
 }
 #footer ul {
     margin-top: 4%;

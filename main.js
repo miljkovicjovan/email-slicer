@@ -1,15 +1,27 @@
 // html target variables
 var error = document.getElementById('error');
+
+var inputCont = document.getElementById('input-cont');
+
+var resultCont = document.getElementById('result-cont');
+
 var fname = document.getElementById('fname');
 var lname = document.getElementById('lname');
 var submit = document.getElementById('submit');
+
+var emailSpan = document.getElementById('email');
+var usernameSpan = document.getElementById('username');
+var domainSpan = document.getElementById('domain');
 
 // when submit was pressed 
 submit.addEventListener('click', e => {
     // check the values 
     checkValues(fname, lname);
-    // make the results
-    // remove the input and display the results
+});
+document.addEventListener('keypress', e => {
+    if (e.key === 'Enter') {
+        checkValues(fname, lname);
+    }
 });
 
 // function to check the values and display an errors
@@ -46,5 +58,23 @@ function checkValues(fname, lname) {
 
 // function to make the results (username/email/domain)
 function makeResults(firstName, lastName) {
-    console.log(firstName + lastName);
+    // create email 
+    var email = lastName.toLowerCase() + firstName.toLowerCase() + "@email.com"
+
+    // create username
+    var username = "@" + firstName.toLowerCase() + lastName.toLowerCase();
+
+    // create domain name 
+    var domain =  lastName.toLowerCase() + firstName.toLowerCase() + ".com";
+
+    // pass the variables to the last function to display in the results cont
+    displayResults(email, username, domain);
+}
+
+// function to display the result cont 
+function displayResults(email, username, domain) {
+    // add the results in the HTML variables
+    emailSpan.innerHTML = email;
+    usernameSpan.innerHTML = username;
+    domainSpan.innerHTML = domain;
 }
