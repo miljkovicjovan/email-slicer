@@ -35,16 +35,19 @@
     <div  class="d-flex flex-row justify-content-around mx-auto w-75" id="input-cont">
         <span>
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" placeholder="John">
+            <input type="text" id="fname" name="fname" placeholder="John" autocomplete="off">
         </span>
 
         <span>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" placeholder="Doe">
+            <input type="text" id="lname" name="lname" placeholder="Doe" autocomplete="off">
         </span>
 
         <a href="#" id="submit">Submit</a>
     </div>
+    
+    <!-- ERROR CONTAINER -->
+    <span id="error">-</span>
 
     <!-- RESULT CONTAINER -->
     <div id="result-cont">
@@ -53,10 +56,12 @@
                 <p>E-mail</p>
                 <h4 id="email">jovan@mail.com</h4>
             </li>
+            
             <li>
                 <p>Username</p>
                 <h4 id="username">@miljkovicjoava</h4>
             </li>
+
             <li>
                 <p>Domain</p>
                 <h4 id="domain">www.miljkovicjovan.com</h4>
@@ -67,11 +72,24 @@
     <!-- FOOTER -->
     <div id="footer">
         <p>Website created by <a target="_blank" href="https://j13.netlify.app">@miljkovicjovan</a></p>
+
         <ul class="d-flex flex-row justify-content-center list-unstyled">
-            <li><a target="_blank" href="https://github.com/miljkovicjovan"><i class="fab fa-github-square"></i></a></li>
-            <li id="linkedin"><a target="_blank" href="https://www.linkedin.com/in/jovan-miljkovic-b42a12204/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a target="_blank" href="mailto:jovan.miljkovic.biz@gmail.com"><i class="fas fa-envelope"></i></a></li>
+            <li>
+                <a target="_blank" href="https://github.com/miljkovicjovan"><i class="fab fa-github-square"></i></a>
+            </li>
+
+            <li id="linkedin">
+                <a target="_blank" href="https://www.linkedin.com/in/jovan-miljkovic-b42a12204/"><i class="fab fa-linkedin"></i></a>
+            </li>
+
+            <li>
+                <a target="_blank" href="mailto:jovan.miljkovic.biz@gmail.com"><i class="fas fa-envelope"></i></a>
+            </li>
         </ul>
+
     </div>
+
+    <!-- SCRIPTS -->
+    <script src="main.js"></script>
 </body>
 </html>
